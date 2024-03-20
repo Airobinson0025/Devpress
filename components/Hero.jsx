@@ -5,7 +5,7 @@ import { FaGithub } from 'react-icons/fa'
 
 const Hero = () => {
   return (
-    <div className='flex flex-col justify-center items-start sm:items-center h-screen gap-6 bg-background'>
+    <div className='flex flex-col justify-center items-start sm:items-center h-[750px] gap-6 bg-background'>
         <div className='flex flex-col sm:items-center gap-6'>
             <h1 className='text-5xl lg:text-6xl'>Welcome to DevPress</h1>
             <h3 className='sm:text-center'>Write. Share. Connect. Markdown Blogging for Developers</h3>

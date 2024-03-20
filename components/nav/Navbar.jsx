@@ -30,8 +30,8 @@ const Navbar = () => {
         <div className='hidden lg:inline'>
             <ul>
                 <li>
-                    <Link href='/signup'>
-                        <Button>Sign Up</Button>
+                    <Link href='/signin'>
+                        <Button>Sign In</Button>
                     </Link>
                 </li>
             </ul>
