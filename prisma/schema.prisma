@@ -17,4 +17,20 @@ model User {
   password  String
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+  profile   Profile? @relation(fields: [profileId], references: [id])
+  profileId String?  @unique
+}
+
+model Profile {
+  id             String   @id @default(uuid())
+  username       String   @unique
+  bio            String?
+  image          String?
+  dateOfBirth    DateTime
+  genderIdentity String
+  pronouns       String
+  location       String
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+  User           User?
 }

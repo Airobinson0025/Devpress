@@ -7,6 +7,7 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '
 import { Input } from '../ui/input'
 import { Button } from '../ui/button'
 import { useRouter } from 'next/navigation'
+import { FaGithub } from 'react-icons/fa'
 
 
 const formSchema = z.object({
@@ -61,7 +62,7 @@ const SignUpForm = () => {
   }
 
   return (
-      <Form {...form} className='flex flex-col items-center justify-center'>
+      <Form {...form} className='flex flex-col items-center justify-center bg-background'>
         <h1 className='text-center'>Create an account</h1>
         <h4 className='text-center text-gray-400 mt-2'>Enter your information below</h4>
         <form 
@@ -113,7 +114,8 @@ const SignUpForm = () => {
           }}/>
           <Button type='submit' className='w-full'>Sign Up</Button>
         </form>
-        {/* <div className='mx-auto my-4 flex w-full items-center justify-evenly before:mr-4 before:block before:h-px before:flex-grow before:bg-stone-400 after:ml-4 after:block after:h-px after:flex-grow after:bg-stone-400'>or</div> */}
+        <div className='mx-auto my-4 flex w-full items-center justify-evenly before:mr-4 before:block before:h-px before:flex-grow before:bg-stone-400 after:ml-4 after:block after:h-px after:flex-grow after:bg-stone-400'>or</div>
+        <Button className='w-full' size='lg'>Sign In With Github<FaGithub  className='text-2xl ml-2'/></Button>
       </Form>
     
   )

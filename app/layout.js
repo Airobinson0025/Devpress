@@ -7,13 +7,13 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "MdPress",
-  description: "Create a blog using markdown.",
+  description: "Dev blog community.",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body>
         <ThemeProvider
         attribute="class"
         defaultTheme="system"
